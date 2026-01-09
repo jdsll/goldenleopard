@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In Loving Memory of Sifu Li Yen Fen</title>
     <style>
-        /* Modern reset and elegant fonts */
+        /* Base Setup */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: 'Georgia', serif;
-            color: #333;
+            color: #555; /* Medium grey text for a softer feel */
             line-height: 1.6;
         }
 
-        /* Full screen background image */
+        /* Background Image Logic */
         .background {
-            background-image: url('background.jpg.PNG');
+            background-image: url('background.jpg.png'); /* Ensure this matches your GitHub filename exactly */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -27,59 +27,88 @@
             z-index: -1;
         }
 
-        /* Container for the text */
+        /* Main Content Container */
         .content-wrapper {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
-            /* Semi-transparent white to ensure text is readable */
+            padding: 60px 40px;
+            /* Lightly translucent for desktop */
             background: rgba(255, 255, 255, 0.7);
             min-height: 100vh;
+            box-sizing: border-box;
         }
 
+        /* Typography */
         h1 {
             font-size: 2.5rem;
-            color: #8a704a; /* Golden bronze color */
+            color: #a68b64; /* Soft golden bronze */
             margin-bottom: 0.5rem;
             line-height: 1.2;
+            font-weight: normal;
         }
 
         h2 {
             font-style: italic;
             font-weight: normal;
-            margin-bottom: 2rem;
-            color: #555;
+            margin-bottom: 2.5rem;
+            color: #777; /* Softer grey for sub-header */
+            font-size: 1.4rem;
         }
 
         p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            margin-bottom: 1.8rem;
+            font-size: 1.15rem;
             text-align: justify;
         }
 
         .highlight {
             font-weight: bold;
-            color: #8a704a;
+            color: #a68b64;
         }
 
         .chinese-text {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             display: block;
-            margin-top: 10px;
+            margin-top: 15px;
+            color: #777;
         }
 
         footer {
-            margin-top: 4rem;
-            border-top: 1px solid #ccc;
-            padding-top: 2rem;
+            margin-top: 5rem;
+            border-top: 1px solid #eee;
+            padding-top: 2.5rem;
             text-align: center;
             font-style: italic;
+            color: #888;
         }
 
-        /* Mobile adjustments */
-        @media (max-width: 600px) {
-            .content-wrapper { padding: 20px; }
+        /* Mobile Adjustments (Phones and Tablets) */
+        @media (max-width: 768px) {
+            .background {
+                /* Shifts image so the leopard (on the right) stays visible */
+                background-position: 85% center; 
+            }
+            
+            .content-wrapper {
+                padding: 40px 25px;
+                /* High translucency (0.4) to see the photo details through the text */
+                background: rgba(255, 255, 255, 0.4);
+                margin: 0;
+                width: 100%;
+                min-height: 100vh;
+            }
+
             h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.2rem; margin-bottom: 1.5rem; }
+            
+            p { 
+                font-size: 1.05rem; 
+                text-align: left; /* Better for narrow screens */
+                /* Subtle white shadow to keep grey text readable over the photo */
+                text-shadow: 1px 1px 2px rgba(255,255,255,0.8); 
+            }
+
+            .chinese-text { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -116,4 +145,3 @@
 
 </body>
 </html>
-
