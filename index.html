@@ -1,18 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Business Update</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Loving Memory of Sifu Li Yen Fen</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        img { max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px; }
+        /* Modern reset and elegant fonts */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Georgia', serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Full screen background image */
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Container for the text */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            /* Semi-transparent white to ensure text is readable */
+            background: rgba(255, 255, 255, 0.7);
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #8a704a; /* Golden bronze color */
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #8a704a;
+        }
+
+        .chinese-text {
+            font-size: 1.5rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid #ccc;
+            padding-top: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .content-wrapper { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to [Business Name]</h1>
-    <p>This is the simple message your wife wants to share.</p>
-    
-    <img src="photo1.jpg" alt="Description of photo">
-    
-    <p>Contact us at: email@example.com</p>
+
+    <div class="background"></div>
+
+    <div class="content-wrapper">
+        <header>
+            <h1>In Loving Memory of Sifu Li Yen Fen</h1>
+            <h2>(Known in the USA as Lana Li)</h2>
+        </header>
+
+        <section>
+            <p><span class="highlight">This space is dedicated to honoring the life, spirit, and love of Sifu Li Yen Fen.</span></p>
+            
+            <p>She embodied strength, wisdom, integrity, independence, and innovation — and her presence continues to guide and inspire.</p>
+
+            <p>Born in Macau, China, she began her martial journey in her youth, studying Chan Family Choy Li Fut Kung Fu under her Sifu, Liang Nai-Zhao. Later, she studied Sanda, Chinese Kickboxing, at Beijing University and spent a brief but productive period learning Buk Sing Choy Li Fut from a friend, Sifu Wan Kei Ho. She skillfully melded these influences into her own style and was a true champion of discovering what works best for each individual martial practitioner.</p>
+
+            <p>After moving to America, she opened a small academy in Arizona, teaching in the evenings after her day job, driven purely by her passion for Kung Fu. Five days a week, for two hours each night, she imparted her tough standards alongside her brilliant and innovative methods to her Choy Li Fut and Sanda students.</p>
+
+            <p>She was incredibly fierce and earned the nickname <span class="highlight">Golden Leopard</span> — a revered animal in Kung Fu, known for its aggression, fierceness, and its ability to fight even while retreating. Unsurprisingly, this trait is essential to excelling in Kung Fu culture, especially as a woman.</p>
+
+            <p>She was taken far too young, but her lessons, mindset, honor, and discipline continue to inspire far beyond her incarnate years.</p>
+        </section>
+
+        <footer>
+            <p>Lani Li<br>
+            Forever remembered. Forever loved.<br>
+            <span class="chinese-text">思念長存</span></p>
+        </footer>
+    </div>
+
 </body>
 </html>
